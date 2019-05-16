@@ -1,0 +1,13 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 12px 8px;
+  background-color: rgb(66, 66, 66);
+}

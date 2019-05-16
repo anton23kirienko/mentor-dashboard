@@ -1,0 +1,64 @@
+:root {
+  --color-checked: rgb(0, 127, 2);
+  --color-nomark: rgb(219, 0, 0);
+  --color-checking: rgb(255, 71, 71);
+  --color-inprogress: rgb(255, 173, 150);
+  --color-todo: rgb(175, 175, 175);
+}
+
+.table__caption {
+  margin: 18px 0px 6px 0px;
+}
+
+.table {
+  width: 100%;
+  border: 1px solid rgb(11, 11, 11);
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.table__body-row,
+.table__header-row {
+  border-bottom: 1px solid rgb(11, 11, 11);
+}
+
+.table__header-cell {
+  width: 300px;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.table__body-cell {
+  padding: 8px 12px;
+  border: 1px solid rgb(11, 11, 11);
+  text-align: center;
+  word-break: break-word;
+}
+
+.table__link {
+  padding: 8px 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.table__body-cell_checked-mark { background-color: var(--color-checked); }
+.table__body-cell_checked-nomark { background-color: var(--color-nomark); }
+.table__body-cell_checking { background-color: var(--color-checking); }
+.table__body-cell_inprogress { background-color: var(--color-inprogress); }
+.table__body-cell_todo,
+.table__body-cell_no-status { background-color: var(--color-todo); }
+
+.table__specification {
+  display: flex;
+  margin: 16px 0px;
+}
+
+.specification__item {
+  padding: 12px 20px;
+}
+
+.specification__item_checked { background-color: var(--color-checked); }
+.specification__item_nomark { background-color: var(--color-nomark); }
+.specification__item_progress { background-color: var(--color-inprogress); }
+.specification__item_todo { background-color: var(--color-todo); }
+.specification__item_checking { background-color: var(--color-checking); }
